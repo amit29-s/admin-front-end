@@ -1,0 +1,328 @@
+{
+    "features": [
+      {
+        "featureName": "Discount",
+        "keywordsForSearch": ["discount", "promotion", "sale"],
+        "description": "Allows vendors to apply percentage and flat rate discounts.",
+        "enabled": false,
+        "stage": "beta",
+        "version": 1,
+        "subFeatures": [
+          {
+            "name": "Percentage Discount",
+            "enabled": false,
+            "description": "Allows percentage-based discounts.",
+            "config": {
+              "maxPercentage": 50,
+              "minPurchaseAmount": 100
+            }
+          },
+          {
+            "name": "Flat Discount",
+            "enabled": false,
+            "description": "Allows flat rate discounts.",
+            "config": {
+              "flatAmount": 20,
+              "minPurchaseAmount": 150
+            }
+          }
+        ],
+        "route": "/features/discount",
+        "owner": ["60d2ef9a987f9b6f5f3c1234"]
+      },
+      {
+        "featureName": "Product Management",
+        "keywordsForSearch": ["product", "inventory", "catalog"],
+        "description": "Manage the products available for sale, including stock and pricing.",
+        "enabled": false,
+        "stage": "production",
+        "version": 2,
+        "subFeatures": [
+          {
+            "name": "Product Categories",
+            "enabled": false,
+            "description": "Organize products into categories.",
+            "config": {
+              "maxCategories": 100,
+              "defaultCategory": "General"
+            }
+          },
+          {
+            "name": "Product Variants",
+            "enabled": false,
+            "description": "Allows vendors to add variants (e.g., size, color) to products.",
+            "config": {
+              "maxVariants": 5
+            }
+          }
+        ],
+        "route": "/features/product-management",
+        "owner": ["60d2ef9a987f9b6f5f3c5678"]
+      },
+      {
+        "featureName": "Order Management",
+        "keywordsForSearch": ["order", "sales", "purchase"],
+        "description": "Handle customer orders, including processing, tracking, and fulfillment.",
+        "enabled": false,
+        "stage": "production",
+        "version": 3,
+        "subFeatures": [
+          {
+            "name": "Order Tracking",
+            "enabled": false,
+            "description": "Enables tracking of customer orders.",
+            "config": {
+              "trackingMethod": "Real-Time",
+              "carrierIntegration": "FedEx, UPS"
+            }
+          },
+          {
+            "name": "Order Fulfillment",
+            "enabled": false,
+            "description": "Manages the process of fulfilling customer orders.",
+            "config": {
+              "defaultFulfillmentTime": "2 Days"
+            }
+          }
+        ],
+        "route": "/features/order-management",
+        "owner": ["60d2ef9a987f9b6f5f3c9101"]
+      },
+      {
+        "featureName": "Shipping Management",
+        "keywordsForSearch": ["shipping", "delivery", "logistics"],
+        "description": "Manage shipping methods, rates, and delivery times.",
+        "enabled": false,
+        "stage": "beta",
+        "version": 2,
+        "subFeatures": [
+          {
+            "name": "Shipping Methods",
+            "enabled": false,
+            "description": "Configure shipping options for customers.",
+            "config": {
+              "methodsAvailable": ["Standard", "Express"],
+              "defaultMethod": "Standard"
+            }
+          },
+          {
+            "name": "Shipping Rates",
+            "enabled": false,
+            "description": "Calculate shipping costs based on location and weight.",
+            "config": {
+              "rateCalculationMethod": "Flat-Rate"
+            }
+          }
+        ],
+        "route": "/features/shipping-management",
+        "owner": ["60d2ef9a987f9b6f5f3c4321"]
+      },
+      {
+        "featureName": "Customer Reviews",
+        "keywordsForSearch": ["reviews", "ratings", "feedback"],
+        "description": "Allow customers to leave reviews and ratings on products.",
+        "enabled": false,
+        "stage": "production",
+        "version": 1,
+        "subFeatures": [
+          {
+            "name": "Product Reviews",
+            "enabled": false,
+            "description": "Enable customers to leave written reviews on products.",
+            "config": {
+              "maxReviewLength": 500
+            }
+          },
+          {
+            "name": "Star Ratings",
+            "enabled": false,
+            "description": "Allow customers to give star ratings to products.",
+            "config": {
+              "maxRating": 5
+            }
+          }
+        ],
+        "route": "/features/customer-reviews",
+        "owner": ["60d2ef9a987f9b6f5f3c5679"]
+      },
+      {
+        "featureName": "Coupons",
+        "keywordsForSearch": ["coupons", "discount", "voucher"],
+        "description": "Generate and manage coupon codes for discounts.",
+        "enabled": false,
+        "stage": "beta",
+        "version": 1,
+        "subFeatures": [
+          {
+            "name": "Percentage Coupons",
+            "enabled": false,
+            "description": "Allows percentage-based discount codes.",
+            "config": {
+              "maxDiscount": 20
+            }
+          },
+          {
+            "name": "Flat Coupons",
+            "enabled": false,
+            "description": "Allows flat-rate discount codes.",
+            "config": {
+              "maxDiscountAmount": 50
+            }
+          }
+        ],
+        "route": "/features/coupons",
+        "owner": ["60d2ef9a987f9b6f5f3c1122"]
+      },
+      {
+        "featureName": "Analytics and Reporting",
+        "keywordsForSearch": ["analytics", "reports", "data"],
+        "description": "Provides detailed reports on sales, customers, and site performance.",
+        "enabled": false,
+        "stage": "production",
+        "version": 3,
+        "subFeatures": [
+          {
+            "name": "Sales Reports",
+            "enabled": false,
+            "description": "Detailed reports on product and order sales.",
+            "config": {
+              "reportingPeriod": "Monthly"
+            }
+          },
+          {
+            "name": "Customer Analytics",
+            "enabled": false,
+            "description": "Track customer behaviors and purchases.",
+            "config": {
+              "segmentCustomers": true
+            }
+          }
+        ],
+        "route": "/features/analytics-reporting",
+        "owner": ["60d2ef9a987f9b6f5f3c7890"]
+      },
+      {
+        "featureName": "Inventory Management",
+        "keywordsForSearch": ["inventory", "stock", "products"],
+        "description": "Track and manage product stock levels in real-time.",
+        "enabled": false,
+        "stage": "production",
+        "version": 2,
+        "subFeatures": [
+          {
+            "name": "Stock Tracking",
+            "enabled": false,
+            "description": "Tracks product stock levels and alerts when stock is low.",
+            "config": {
+              "lowStockThreshold": 10
+            }
+          },
+          {
+            "name": "Stock Alerts",
+            "enabled": false,
+            "description": "Send alerts to vendors when stock levels are low.",
+            "config": {
+              "alertMethod": "Email"
+            }
+          }
+        ],
+        "route": "/features/inventory-management",
+        "owner": ["60d2ef9a987f9b6f5f3c3333"]
+      },
+      {
+        "featureName": "Payment Gateways",
+        "keywordsForSearch": ["payments", "gateway", "transactions"],
+        "description": "Integrate multiple payment gateways for customer transactions.",
+        "enabled": false,
+        "stage": "beta",
+        "version": 1,
+        "subFeatures": [
+          {
+            "name": "Credit Card Payments",
+            "enabled": false,
+            "description": "Accept payments via credit card.",
+            "config": {
+              "supportedGateways": ["Stripe", "PayPal"]
+            }
+          },
+          {
+            "name": "Digital Wallets",
+            "enabled": false,
+            "description": "Accept payments via digital wallets.",
+            "config": {
+              "supportedWallets": ["Apple Pay", "Google Pay"]
+            }
+          }
+        ],
+        "route": "/features/payment-gateways",
+        "owner": ["60d2ef9a987f9b6f5f3c4567"]
+      },
+      {
+        "featureName": "Abandoned Cart Recovery",
+        "keywordsForSearch": ["abandoned cart", "cart recovery", "sales"],
+        "description": "Recover sales by sending reminders to customers with abandoned carts.",
+        "enabled": false,
+        "stage": "alpha",
+        "version": 1,
+        "subFeatures": [
+          {
+            "name": "Cart Reminders",
+            "enabled": false,
+            "description": "Send automated reminders to customers with abandoned carts.",
+            "config": {
+              "reminderFrequency": "24 Hours"
+            }
+          },
+          {
+            "name": "Recovery Discounts",
+            "enabled": false,
+            "description": "Offer discounts to recover abandoned carts.",
+            "config": {
+              "discountAmount": 10
+            }
+          }
+        ],
+        "route": "/features/abandoned-cart-recovery",
+        "owner": ["60d2ef9a987f9b6f5f3c6543"]
+      },
+      {
+        "featureName": "Customer Loyalty Program",
+        "keywordsForSearch": ["loyalty", "rewards", "points"],
+        "description": "Implement a customer loyalty program to reward frequent buyers.",
+        "enabled": false,
+        "stage": "alpha",
+        "version": 1,
+        "subFeatures": [
+          {
+            "name": "Points System",
+            "enabled": false,
+            "description": "Customers earn points for every purchase.",
+            "config": {
+              "pointsPerDollar": 1
+            }
+          },
+          {
+            "name": "Rewards Redemption",
+            "enabled": false,
+            "description": "Customers can redeem points for discounts or gifts.",
+            "config": {
+              "minPointsForRedemption": 100
+            }
+          }
+        ],
+        "route": "/features/loyalty-program",
+        "owner": ["60d2ef9a987f9b6f5f3c9876"]
+      },
+      {
+        "featureName": "Multi Stores",
+        "keywordsForSearch": ["Multi", "Stores", "Option"],
+        "description": "Enabling Multi Stores Options Can Apply Extra Charges",
+        "enabled": false,
+        "stage": "alpha",
+        "version": 1,
+        "subFeatures": [],
+        "owner": ["60d2ef9a987f9b6f5f3c9876"]
+      }
+    ]
+  }
+  
